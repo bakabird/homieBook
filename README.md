@@ -9,7 +9,8 @@
     ```json  
     {
         "errno": 0,
-        "errmsg": ""
+        "errmsg": "",
+        "data": ""
     }
     ```
 
