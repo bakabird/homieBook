@@ -1,37 +1,44 @@
-![markdown-api](http://oerolc7og.bkt.clouddn.com/images/miho/openproject/markdown-api.jpg)
-## 文档概述
-:green_book:基于 Markdown 编写的接口文档；文档中列出几个案例供参考。
+# 文档使用说明
 
-## 环境部署/安装
-本文档在 gitbook 下运行的，安装步骤如下：
-### 1. 克隆源代码
-    > git clone https://github.com/WongMinHo/api-doc.git
-### 2. 配置本地运行环境
-1). 安装npm
-从[官网](https://nodejs.org/en/download/)下载源码，解压，执行如下命令安装：
-```shell
-./configure
-make
-make install 
-```
-2). 安装gitbook
-```shell
-npm install gitbook-cli -g
-```
-如果安装太慢，可以设置淘宝代理镜像，执行命令：
-```shell
-npm config set registry https://registry.npm.taobao.or
-```
-查看gitbook是否安装成功：
-```shell
-gitbook -V
-```
-## 使用
-进入api-doc目录，执行命令：
-```shell
-gitbook serve
-```
-浏览器打开：http://localhost:4000/
-即可访问文档。
+## 1 返回结果
 
-    
+所有返回结果以 JSON 格式返回；接口返回一共有两种情况：
+
+1. 成功操作返回，范例：
+
+    ```json  
+    {
+        "errno": 0,
+        "errmsg": ""
+    }
+    ```
+
+2. 成功返回数据，范例：
+
+    ```json  
+    {
+        "errno": 0,
+        "errmsg": "",
+        "data": {    //数据
+            "roomId": 1
+        }
+    }
+    ```
+
+3. 错误返回，范例：
+
+    ```json  
+    {
+      "err_code": "1001",//错误状态码
+      "err_msg": "认证失败，请重新登录！"//错误信息
+    }
+    ```
+
+### 2 全局响应状态码说明
+
+状态码       |说明       
+------------|-----------
+0        |操作成功    
+1001       |参数不合法！    
+1002 |操作对象不存在 
+
