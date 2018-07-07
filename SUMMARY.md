@@ -3,6 +3,7 @@
 * [0. 控制包](api/control.md)
   * [0.1 嗨](api/control.md#1-嗨)
   * [0.2 回音](api/control.md#2-回音)
+  * [0.3 所有房间](api/control.md#3-所有房间)
 * [1. 房间管理](api/room.md)
   * [1.1 添加房间](api/room.md#1-添加房间)
   * [1.2 删除房间](api/room.md#2-删除房间)
