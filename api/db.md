@@ -1,4 +1,4 @@
-## 0. 房间
+## 房间
 
 room
 
@@ -10,7 +10,7 @@ room
 | y坐标 y            | int      | /      | no       | no       | /    | no   |      |
 | 是否入口房间 entry | bool     | false  | yes      | /        | /    | no   |      |
 
-## 1. 房间内电器
+## 房间内电器
 
 roomsEleEquipment
 
@@ -19,7 +19,7 @@ roomsEleEquipment
 | 房间编号 rid | int      | /      | no       | no       | room(id)         | yes  |      |
 | 电器编号 eid | int      | /      | no       | no       | eleEquipment(id) | yes  |      |
 
-## 2. 房间内传感器
+## 房间内传感器
 
 roomsSensor
 
@@ -29,7 +29,7 @@ roomsSensor
 | 传感器编号 sid | int      | /      | no       | no       | eleEquipment(id) | yes  |      |
 
 
-## 3. 房间连通
+## 房间连通
 
 roomsAdjoin
 
@@ -39,7 +39,7 @@ roomsAdjoin
 | 连通房间编号  torid | int      | /      | no       | no       | room(id) | yes  |      |
 
 
-## 4. 电器
+## 电器
 
 eleEquipment
 
@@ -51,7 +51,7 @@ eleEquipment
 | y坐标 y   | int      | /      | no       | no       | /    | no   |      |
 
 
-## 5. 传感器
+## 传感器
 
 sensor
 
@@ -63,7 +63,7 @@ sensor
 | y坐标 y         | int      | /      | no       | no       | /    | no   |                                  |
 | 传感器类型 type | char(1)  | /      | no       | /        | /    | no   | enum('T','H')  T ~ Temp H ~ Humi |
 
-## 6. 传感器感知值
+## 传感器感知值
 
 sensorVal
 
@@ -74,7 +74,7 @@ sensorVal
 | 时刻 time | int      | /      | no       | no       | /    | yes  |      |
 | 数值      | int      | /      | no       | no       | /    | no   |      |
 
-## 7. 灯
+## 灯
 
 light
 
@@ -83,7 +83,7 @@ light
 | 电器编号 id | int      | /      | no       | no       | yes  | yes  |      |
 | 是否开启 on | bool     | false  | yes      | /        | /    | no   |      |
 
-## 8. 模拟人
+## 模拟人
 
 member
 
@@ -93,8 +93,9 @@ member
 | 名字 name | char(15) | /      | no       | /        | /    | no   |      |
 | 密码 psw  | char(15) | /      | no       | /        | /    | no   |      |
 
+## 未知
 
-## 999. 未知
+unknown
 
 | 字段名              | 数据类型 | 默认值 | 允许非空 | 自动递增 | 外键 | 主键 | 备注                             |
 | ------------------- | -------- | ------ | -------- | -------- | ---- | ---- | -------------------------------- |
