@@ -6,6 +6,7 @@
   * [0.2 模式切换](api/control.md#2-模式切换)
   * [0.3 所有房间](api/control.md#3-所有房间)
   * [0.4 刷新数据库](api/control.md#4-刷新数据库)
+  * [0.5 所有电器](api/control.md#5-所有电器)
 * [1. 房间管理](api/room.md)
   * [1.0 创建房间](api/room.md#0-创建房间)
   * [1.1 创建入口房间](api/room.md#1-创建入口房间)
